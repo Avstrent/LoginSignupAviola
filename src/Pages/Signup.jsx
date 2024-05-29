@@ -3,6 +3,7 @@ import PersonAddAltRoundedIcon from '@mui/icons-material/PersonAddAltRounded';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import '../Styles/Index.css';
 
 
@@ -68,9 +69,11 @@ export default function LoginPage() {
                             }}
                         />
                     </Box>
-                    <Box sx={{ p: 1 }}>
-                        <Button size="large" fullWidth variant="contained" endIcon={<PersonAddAltRoundedIcon />}>Sign up</Button>
-                    </Box>
+                    <Link to="/" style={{ textDecoration: 'none' }}>
+                            <Button size="large" fullWidth variant="contained" endIcon={<PersonAddAltRoundedIcon />}>
+                                Sign in
+                            </Button>
+                        </Link>
                 </Container>
             </Box>
         </>
