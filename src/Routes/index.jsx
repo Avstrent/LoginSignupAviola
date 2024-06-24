@@ -1,8 +1,9 @@
 import LoginPage from "../Pages/Login";
-import SignUp from "../Pages/Signup";
+import SignUpPage from "../Pages/Signup";
 import Dashboard from "../Pages/Dashboard";
 import Main from "../Pages/Main";
 import Users from "../Pages/Users";
+
 
 const routes = [
     {
@@ -10,8 +11,8 @@ const routes = [
         element: <LoginPage />
     },
     {
-        path: "/signup",
-        element: <SignUp />
+        path: "/Signup",
+        element: <SignUpPage />
     },
     {
         path: "/dashboard",
